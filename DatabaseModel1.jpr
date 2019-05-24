@@ -71,8 +71,13 @@
    <value n="defaultPackage" v="databasemodel1"/>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
+         <string v="ADFbc-Modeling"/>
          <string v="Database"/>
          <string v="Database-Modeling"/>
+         <string v="Database-Profile"/>
+         <string v="EJB-Modeling"/>
+         <string v="UML"/>
+         <string v="XML"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
