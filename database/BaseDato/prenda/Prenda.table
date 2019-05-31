@@ -1,14 +1,14 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <table xmlns="http://xmlns.oracle.com/jdeveloper/1211/offlinedb">
-  <name>Talla</name>
+  <name>Prenda</name>
   <columns>
     <column>
-      <name>idTalla</name>
+      <name>idPrenda</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
             <key>precision</key>
-            <value class="java.lang.Long">1</value>
+            <value class="java.lang.Long">4</value>
           </entry>
         </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
@@ -18,7 +18,7 @@
       <notNull>true</notNull>
     </column>
     <column>
-      <name>descrip</name>
+      <name>Descripcion</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
@@ -30,21 +30,51 @@
           <typeName>VARCHAR</typeName>
         </dataTypeID>
       </dataTypeUsage>
-      <notNull>true</notNull>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <name>idEstilo</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">2</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMERIC</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <name>Talla</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">4</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
     </column>
   </columns>
   <constraints>
     <constraint class="oracle.javatools.db.PKConstraint">
-      <name>Talla_PK</name>
+      <name>Prenda_PK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
-          <name>idTalla</name>
+          <name>idPrenda</name>
           <parent class="oracle.javatools.db.NameBasedID">
-            <name>Talla</name>
-            <schemaName>dbo</schemaName>
+            <name>Prenda</name>
+            <schemaName>prenda</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>dbo</schemaName>
+          <schemaName>prenda</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -58,6 +88,6 @@
     </entry>
   </properties>
   <schema>
-    <name>dbo</name>
+    <name>prenda</name>
   </schema>
 </table>

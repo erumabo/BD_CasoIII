@@ -1,14 +1,14 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <table xmlns="http://xmlns.oracle.com/jdeveloper/1211/offlinedb">
-  <name>Color</name>
+  <name>Conjunto</name>
   <columns>
     <column>
-      <name>idColor</name>
+      <name>idConjunto</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
             <key>precision</key>
-            <value class="java.lang.Long">2</value>
+            <value class="java.lang.Long">4</value>
           </entry>
         </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
@@ -18,7 +18,7 @@
       <notNull>true</notNull>
     </column>
     <column>
-      <name>descrip</name>
+      <name>Nombre</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
@@ -35,16 +35,16 @@
   </columns>
   <constraints>
     <constraint class="oracle.javatools.db.PKConstraint">
-      <name>COLOR_PK</name>
+      <name>Conjunto_PK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
-          <name>idColor</name>
+          <name>idConjunto</name>
           <parent class="oracle.javatools.db.NameBasedID">
-            <name>Color</name>
-            <schemaName>dbo</schemaName>
+            <name>Conjunto</name>
+            <schemaName>prenda</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>dbo</schemaName>
+          <schemaName>prenda</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -58,6 +58,6 @@
     </entry>
   </properties>
   <schema>
-    <name>dbo</name>
+    <name>prenda</name>
   </schema>
 </table>

@@ -56,10 +56,10 @@
           <name>idColor</name>
           <parent class="oracle.javatools.db.NameBasedID">
             <name>Estilo</name>
-            <schemaName>dbo</schemaName>
+            <schemaName>prenda</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>cliente</schemaName>
+          <schemaName>prenda</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -68,7 +68,7 @@
         <name>COLOR_PK</name>
         <parent class="oracle.javatools.db.NameBasedID">
           <name>Color</name>
-          <schemaName>dbo</schemaName>
+          <schemaName>prenda</schemaName>
           <type>TABLE</type>
         </parent>
         <schemaName>dbo</schemaName>
@@ -82,10 +82,10 @@
           <name>idEstilo</name>
           <parent class="oracle.javatools.db.NameBasedID">
             <name>Estilo</name>
-            <schemaName>dbo</schemaName>
+            <schemaName>prenda</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>cliente</schemaName>
+          <schemaName>prenda</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -99,6 +99,6 @@
     </entry>
   </properties>
   <schema>
-    <name>dbo</name>
+    <name>prenda</name>
   </schema>
 </table>
