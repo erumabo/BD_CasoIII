@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmlns:xmi='http://www.omg.org/spec/XMI/20131001' xmlns:uml='http://www.omg.org/spec/UML/20131001'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='12.2.1.3.0'/>
+ <uml:UseCase xmi:type='uml:UseCase' xmi:uuid='urn:uuid:8ced798c-fabc-4213-bbb9-68b9b3871b79'
+   isAbstract='false'
+   isFinalSpecialization='false'
+   isLeaf='false'
+   name='DesplegarFaltantes'
+   visibility='public'/>
+</xmi:XMI>
