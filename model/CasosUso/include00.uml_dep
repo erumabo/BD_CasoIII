@@ -2,7 +2,7 @@
 <xmi:XMI xmlns:xmi='http://www.omg.org/spec/XMI/20131001' xmlns:uml='http://www.omg.org/spec/UML/20131001'>
  <documentation exporter='Oracle JDeveloper' exporterVersion='12.2.1.3.0'/>
  <uml:Dependency xmi:type='uml:Dependency' xmi:uuid='urn:uuid:504b23e0-0007-410c-a3e7-57254bc3cab2'
-   name='Dependency2'
+   name='include00'
    visibility='public'>
   <client href='urn:uuid:27bf2779-d118-4243-ada8-3516d042e8cb'/>
   <supplier href='urn:uuid:8555b7c5-cb20-4ad2-b436-286a8a2726b7'/>
