@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmlns:xmi='http://www.omg.org/spec/XMI/20131001' xmlns:uml='http://www.omg.org/spec/UML/20131001'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='12.2.1.3.0'/>
+ <uml:Activity xmi:type='uml:Activity' xmi:uuid='urn:uuid:341b5025-d995-451a-978d-445049d0c499'
+   isAbstract='false'
+   isActive='false'
+   isFinalSpecialization='false'
+   isLeaf='false'
+   isReadOnly='false'
+   isReentrant='true'
+   isSingleExecution='false'
+   name='OrdenProduccion'
+   visibility='public'>
+  <edge xmi:type='uml:ControlFlow' xmi:uuid='urn:uuid:22066dfe-6550-4f2b-9d10-64c5def988f1'
+    isLeaf='false'
+    name='ControlFlow1'>
+   <source href='urn:uuid:8eeb99b6-45c5-4194-9c9f-59db98294836'/>
+   <target href='urn:uuid:69051d46-fadc-45ea-b625-5e76f407d314'/>
+  </edge>
+  <node xmi:type='uml:InitialNode' xmi:uuid='urn:uuid:8eeb99b6-45c5-4194-9c9f-59db98294836'
+    isLeaf='false'
+    name='InitialNode1'>
+   <outgoing href='urn:uuid:22066dfe-6550-4f2b-9d10-64c5def988f1'/>
+  </node>
+  <node xmi:type='uml:OpaqueAction' xmi:uuid='urn:uuid:69051d46-fadc-45ea-b625-5e76f407d314'
+    isLeaf='false'
+    isLocallyReentrant='false'
+    name='RegistrarPedido'>
+   <incoming href='urn:uuid:22066dfe-6550-4f2b-9d10-64c5def988f1'/>
+  </node>
+ </uml:Activity>
+</xmi:XMI>
