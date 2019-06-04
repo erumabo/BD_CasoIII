@@ -1,14 +1,14 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <table xmlns="http://xmlns.oracle.com/jdeveloper/1211/offlinedb">
-  <name>Nacional</name>
+  <name>OrdenProduccion</name>
   <columns>
     <column>
-      <name>idProveedor</name>
+      <name>idOrden</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
             <key>precision</key>
-            <value class="java.lang.Long">2</value>
+            <value class="java.lang.Long">7</value>
           </entry>
         </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
@@ -18,27 +18,12 @@
       <notNull>true</notNull>
     </column>
     <column>
-      <name>cedulaJuridica</name>
-      <dataTypeUsage>
-        <attributeValues>
-          <entry>
-            <key>size</key>
-            <value class="java.lang.Long">12</value>
-          </entry>
-        </attributeValues>
-        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
-          <typeName>VARCHAR</typeName>
-        </dataTypeID>
-      </dataTypeUsage>
-      <notNull>false</notNull>
-    </column>
-    <column>
-      <name>DiasCredito</name>
+      <name>idPrenda</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
             <key>precision</key>
-            <value class="java.lang.Long">2</value>
+            <value class="java.lang.Long">4</value>
           </entry>
         </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
@@ -47,49 +32,83 @@
       </dataTypeUsage>
       <notNull>false</notNull>
     </column>
+    <column>
+      <name>idSolicitud</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">6</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMERIC</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <name>FechaProduccion</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
   </columns>
   <constraints>
-    <constraint class="oracle.javatools.db.PKConstraint">
-      <name>Nacional_PK</name>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>OrdenProduccion_FK_PrendaXOrden</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
-          <name>idProveedor</name>
+          <name>idPrenda</name>
           <parent class="oracle.javatools.db.NameBasedID">
-            <name>Nacional</name>
-            <schemaName>proveedor</schemaName>
+            <name>OrdenProduccion</name>
+            <schemaName>orden</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>proveedor</schemaName>
+          <schemaName>orden</schemaName>
           <type>COLUMN</type>
         </columnID>
-      </columnIDs>
-      <enabled>true</enabled>
-    </constraint>
-    <constraint class="oracle.javatools.db.FKConstraint">
-      <name>Nacional_FK_Proveedor</name>
-      <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
-          <name>idProveedor</name>
+          <name>idSolicitud</name>
           <parent class="oracle.javatools.db.NameBasedID">
-            <name>Nacional</name>
-            <schemaName>proveedor</schemaName>
+            <name>OrdenProduccion</name>
+            <schemaName>orden</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>proveedor</schemaName>
+          <schemaName>orden</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
       <enabled>true</enabled>
       <referenceID class="oracle.javatools.db.NameBasedID">
-        <name>Proveedor_PK</name>
+        <name>PrendaXOrden_PK</name>
         <parent class="oracle.javatools.db.NameBasedID">
-          <name>Proveedor</name>
-          <schemaName>proveedor</schemaName>
+          <name>PrendaXOrden</name>
+          <schemaName>orden</schemaName>
           <type>TABLE</type>
         </parent>
-        <schemaName>proveedor</schemaName>
+        <schemaName>orden</schemaName>
         <type>CONSTRAINT</type>
       </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <name>OrdenProduccion_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>idOrden</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>OrdenProduccion</name>
+            <schemaName>orden</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>orden</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
     </constraint>
   </constraints>
   <properties>
@@ -99,6 +118,6 @@
     </entry>
   </properties>
   <schema>
-    <name>proveedor</name>
+    <name>orden</name>
   </schema>
 </table>

@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <table xmlns="http://xmlns.oracle.com/jdeveloper/1211/offlinedb">
-  <name>Prenda</name>
+  <name>MateriaPrima</name>
   <columns>
     <column>
-      <name>idPrenda</name>
+      <name>idMaterial</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
@@ -18,12 +18,12 @@
       <notNull>true</notNull>
     </column>
     <column>
-      <name>Descripcion</name>
+      <name>Nombre</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
             <key>size</key>
-            <value class="java.lang.Long">40</value>
+            <value class="java.lang.Long">20</value>
           </entry>
         </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
@@ -33,12 +33,12 @@
       <notNull>false</notNull>
     </column>
     <column>
-      <name>idEstilo</name>
+      <name>CantidadMin</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
             <key>precision</key>
-            <value class="java.lang.Long">2</value>
+            <value class="java.lang.Long">3</value>
           </entry>
         </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
@@ -48,59 +48,63 @@
       <notNull>false</notNull>
     </column>
     <column>
-      <name>Talla</name>
+      <name>ExistenciaActual</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
-            <key>size</key>
+            <key>precision</key>
+            <value class="java.lang.Long">6</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMERIC</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <name>CostoUnitario</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
             <value class="java.lang.Long">4</value>
           </entry>
         </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
-          <typeName>VARCHAR</typeName>
+          <typeName>NUMERIC</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <name>udUnidadMedida</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">4</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMERIC</typeName>
         </dataTypeID>
       </dataTypeUsage>
       <notNull>false</notNull>
     </column>
   </columns>
   <constraints>
-    <constraint class="oracle.javatools.db.FKConstraint">
-      <name>Prenda_FK_Estilo</name>
-      <columnIDs>
-        <columnID class="oracle.javatools.db.NameBasedID">
-          <name>idEstilo</name>
-          <parent class="oracle.javatools.db.NameBasedID">
-            <name>Prenda</name>
-            <schemaName>prenda</schemaName>
-            <type>TABLE</type>
-          </parent>
-          <schemaName>prenda</schemaName>
-          <type>COLUMN</type>
-        </columnID>
-      </columnIDs>
-      <enabled>true</enabled>
-      <referenceID class="oracle.javatools.db.NameBasedID">
-        <name>Estilo_PK</name>
-        <parent class="oracle.javatools.db.NameBasedID">
-          <name>Estilo</name>
-          <schemaName>prenda</schemaName>
-          <type>TABLE</type>
-        </parent>
-        <schemaName>prenda</schemaName>
-        <type>CONSTRAINT</type>
-      </referenceID>
-    </constraint>
     <constraint class="oracle.javatools.db.PKConstraint">
-      <name>Prenda_PK</name>
+      <name>MateriaPrima_PK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
-          <name>idPrenda</name>
+          <name>idMaterial</name>
           <parent class="oracle.javatools.db.NameBasedID">
-            <name>Prenda</name>
-            <schemaName>prenda</schemaName>
+            <name>MateriaPrima</name>
+            <schemaName>receta</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>prenda</schemaName>
+          <schemaName>receta</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -114,6 +118,6 @@
     </entry>
   </properties>
   <schema>
-    <name>prenda</name>
+    <name>receta</name>
   </schema>
 </table>

@@ -6,5 +6,8 @@
    isFinalSpecialization='false'
    isLeaf='false'
    name='DesplegarFaltantes'
-   visibility='public'/>
+   visibility='public'>
+  <subject href='urn:uuid:b98f7088-e766-4601-8e2a-ca9d42529940'/>
+  <subject href='urn:uuid:405f59a3-3f99-42d5-a696-37148375e2da'/>
+ </uml:UseCase>
 </xmi:XMI>

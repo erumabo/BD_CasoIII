@@ -1,14 +1,14 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <table xmlns="http://xmlns.oracle.com/jdeveloper/1211/offlinedb">
-  <name>Tabla1</name>
+  <name>UnidadMedida</name>
   <columns>
     <column>
-      <name>COLUMN1</name>
+      <name>idUnidad</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
             <key>precision</key>
-            <value class="java.lang.Long">2</value>
+            <value class="java.lang.Long">4</value>
           </entry>
         </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
@@ -18,10 +18,31 @@
       <notNull>true</notNull>
     </column>
     <column>
-      <name>COLUMN2</name>
+      <name>Nombre</name>
       <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
           <typeName>VARCHAR</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <name>FactorComun</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">4</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMERIC</typeName>
         </dataTypeID>
       </dataTypeUsage>
       <notNull>false</notNull>
@@ -29,16 +50,16 @@
   </columns>
   <constraints>
     <constraint class="oracle.javatools.db.PKConstraint">
-      <name>Tabla1_PK</name>
+      <name>UnidadMedida_PK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
-          <name>COLUMN1</name>
+          <name>idUnidad</name>
           <parent class="oracle.javatools.db.NameBasedID">
-            <name>Tabla1</name>
-            <schemaName>dbo</schemaName>
+            <name>UnidadMedida</name>
+            <schemaName>receta</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>dbo</schemaName>
+          <schemaName>receta</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -52,6 +73,6 @@
     </entry>
   </properties>
   <schema>
-    <name>dbo</name>
+    <name>receta</name>
   </schema>
 </table>

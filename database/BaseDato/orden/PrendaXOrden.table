@@ -18,7 +18,7 @@
       <notNull>true</notNull>
     </column>
     <column>
-      <name>COLUMN1</name>
+      <name>idSolicitud</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
@@ -79,7 +79,7 @@
       <name>PrendaXOrden_FK_Solicitud</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
-          <name>idPrenda</name>
+          <name>idSolicitud</name>
           <parent class="oracle.javatools.db.NameBasedID">
             <name>PrendaXOrden</name>
             <schemaName>orden</schemaName>
@@ -115,7 +115,7 @@
           <type>COLUMN</type>
         </columnID>
         <columnID class="oracle.javatools.db.NameBasedID">
-          <name>COLUMN1</name>
+          <name>idSolicitud</name>
           <parent class="oracle.javatools.db.NameBasedID">
             <name>PrendaXOrden</name>
             <schemaName>orden</schemaName>
