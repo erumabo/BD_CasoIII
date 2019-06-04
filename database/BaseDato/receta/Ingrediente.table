@@ -3,15 +3,131 @@
   <name>Ingrediente</name>
   <columns>
     <column>
-      <name>COLUMN1</name>
+      <name>idMateria</name>
       <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">4</value>
+          </entry>
+        </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
-          <typeName>VARCHAR</typeName>
+          <typeName>NUMERIC</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <name>idReceta</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">4</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMERIC</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <name>Cantidad</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">4</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMERIC</typeName>
         </dataTypeID>
       </dataTypeUsage>
       <notNull>false</notNull>
     </column>
   </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>Ingrediente_FK_Materia</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>idMateria</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>Ingrediente</name>
+            <schemaName>receta</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>receta</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.NameBasedID">
+        <name>MateriaPrima_PK</name>
+        <parent class="oracle.javatools.db.NameBasedID">
+          <name>MateriaPrima</name>
+          <schemaName>receta</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>receta</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>Ingrediente_FK_Receta</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>idReceta</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>Ingrediente</name>
+            <schemaName>receta</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>receta</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.NameBasedID">
+        <name>Receta_PK</name>
+        <parent class="oracle.javatools.db.NameBasedID">
+          <name>Receta</name>
+          <schemaName>receta</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>receta</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <name>Ingrediente_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>idMateria</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>Ingrediente</name>
+            <schemaName>receta</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>receta</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>idReceta</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>Ingrediente</name>
+            <schemaName>receta</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>receta</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+    </constraint>
+  </constraints>
   <properties>
     <entry>
       <key>TableType</key>

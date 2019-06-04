@@ -3,15 +3,170 @@
   <name>MateriaXProveedor</name>
   <columns>
     <column>
-      <name>COLUMN1</name>
+      <name>idMateria</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">4</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMERIC</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <name>idProveedor</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">2</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMERIC</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <name>CantidadMinima</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">4</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMERIC</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <name>UnidadMedida</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">4</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMERIC</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <name>Costo</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">7</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMERIC</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <name>FechaEntreda</name>
       <dataTypeUsage>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
-          <typeName>VARCHAR</typeName>
+          <typeName>DATE</typeName>
         </dataTypeID>
       </dataTypeUsage>
       <notNull>false</notNull>
     </column>
   </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>MateriaXProveedor_FK_MateriaPrima</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>idMateria</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>MateriaXProveedor</name>
+            <schemaName>proveedor</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>proveedor</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.NameBasedID">
+        <name>MateriaPrima_PK</name>
+        <parent class="oracle.javatools.db.NameBasedID">
+          <name>MateriaPrima</name>
+          <schemaName>receta</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>receta</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>MateriaXProveedor_FK_Proveedor</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>idProveedor</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>MateriaXProveedor</name>
+            <schemaName>proveedor</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>proveedor</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.NameBasedID">
+        <name>Proveedor_PK</name>
+        <parent class="oracle.javatools.db.NameBasedID">
+          <name>Proveedor</name>
+          <schemaName>proveedor</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>proveedor</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <name>MateriaXProveedor_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>idMateria</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>MateriaXProveedor</name>
+            <schemaName>proveedor</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>proveedor</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>idProveedor</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>MateriaXProveedor</name>
+            <schemaName>proveedor</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>proveedor</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+    </constraint>
+  </constraints>
   <properties>
     <entry>
       <key>TableType</key>

@@ -78,7 +78,7 @@
       <notNull>false</notNull>
     </column>
     <column>
-      <name>udUnidadMedida</name>
+      <name>idUnidadMedida</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
@@ -94,6 +94,32 @@
     </column>
   </columns>
   <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>MateriaPrima_FK1</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>idUnidadMedida</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>MateriaPrima</name>
+            <schemaName>receta</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>receta</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.NameBasedID">
+        <name>UnidadMedida_PK</name>
+        <parent class="oracle.javatools.db.NameBasedID">
+          <name>UnidadMedida</name>
+          <schemaName>receta</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>receta</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
     <constraint class="oracle.javatools.db.PKConstraint">
       <name>MateriaPrima_PK</name>
       <columnIDs>
