@@ -10,7 +10,7 @@
       <contained xmi:type='DI:GraphNode' xmi:id='id5a8dd725-442e-4fa3-9a75-cc24cc48c5c3'>
         <contained xmi:type='DI:GraphNode' xmi:id='idc66fad01-605f-4a89-9e4b-f24b76fea931'>
           <semanticModel xmi:type='DI:SimpleSemanticModelBridge' typeInfo='Component'/>
-          <size xmi:type='DI:Dimension' height='4.3116223973829705E-20' width='4.3116223973829705E-20'/>
+          <size xmi:type='DI:Dimension' height='4.311622074265544E-20' width='4.311622074265544E-20'/>
         </contained>
         <contained xmi:type='DI:GraphNode' xmi:id='idd7bef34c-8122-4ee7-bb07-f62f8d3d2941'>
           <contained xmi:type='DI:GraphNode' xmi:id='id2ef0efb7-bade-461c-974c-a1e03a7e2a77'>
@@ -328,13 +328,13 @@
             <waypoint xmi:type='DI:Point' x='610.0' y='544.1640625'/>
           </contained>
           <contained xmi:type='DI:GraphNode' xmi:id='id2f677b35-80ba-4100-a716-7b0e2da01718'>
-            <anchorage xmi:type='DI:GraphConnector' xmi:id='id7a4852cf-b4e8-4a87-b388-c3f9ebc37c84' graphEdge='ide7abbd64-d4fc-4523-b486-5be5c4f8fd52'/>
-            <position xmi:type='DI:Point' x='338.0' y='559.1640625'/>
+            <anchorage xmi:type='DI:GraphConnector' xmi:id='id7a4852cf-b4e8-4a87-b388-c3f9ebc37c84' graphEdge='id59f759de-13f7-40aa-b3f9-4f9750c1681d'/>
+            <position xmi:type='DI:Point' x='37.99998092651367' y='574.1640625'/>
             <property xmi:type='DI:Property' key='lineColor' value='#0'/>
             <semanticModel xmi:type='DI:CoreSemanticModelBridge' element='uml:FlowFinalNode:urn:uuid:7d5b2801-8491-46a3-b339-1001da165cd1'/>
             <size xmi:type='DI:Dimension' height='20.0' width='20.0'/>
           </contained>
-          <contained xmi:type='DI:GraphEdge' xmi:id='ide7abbd64-d4fc-4523-b486-5be5c4f8fd52' anchor='id850e6b92-507d-4f5d-9b6d-db9e35a2fe3a id7a4852cf-b4e8-4a87-b388-c3f9ebc37c84'>
+          <contained xmi:type='DI:GraphEdge' xmi:id='ide7abbd64-d4fc-4523-b486-5be5c4f8fd52' anchor='id850e6b92-507d-4f5d-9b6d-db9e35a2fe3a ida73c3d3f-3bdc-44e5-8069-06f3bf40147e'>
             <contained xmi:type='DI:GraphNode' xmi:id='iddedb5f3a-589b-4659-a769-ee1f75f6c494'>
               <position xmi:type='DI:Point' x='-15.0' y='4.0'/>
               <semanticModel xmi:type='DI:SimpleSemanticModelBridge' typeInfo='sourcename'/>
@@ -348,7 +348,7 @@
               <semanticModel xmi:type='DI:SimpleSemanticModelBridge' typeInfo='name'/>
             </contained>
             <contained xmi:type='DI:GraphNode' xmi:id='id6f22437e-48c0-435b-97b9-1c69402e84e5'>
-              <position xmi:type='DI:Point' x='-65.0' y='-25.47607421875'/>
+              <position xmi:type='DI:Point' x='4.0' y='-25.47607421875'/>
               <semanticModel xmi:type='DI:SimpleSemanticModelBridge' typeInfo='destinationmultiplicity'/>
             </contained>
             <property xmi:type='DI:Property' key='showAssocName' value='false'/>
@@ -362,7 +362,50 @@
             <property xmi:type='DI:Property' key='showWeight' value='false'/>
             <semanticModel xmi:type='DI:CoreSemanticModelBridge' element='uml:ControlFlow:urn:uuid:3a50ebee-db68-450f-8d2e-ffe59552313d'/>
             <waypoint xmi:type='DI:Point' x='503.0' y='570.1640625'/>
-            <waypoint xmi:type='DI:Point' x='357.95062255859375' y='570.1640625'/>
+            <waypoint xmi:type='DI:Point' x='368.0000305175781' y='570.1640625'/>
+          </contained>
+          <contained xmi:type='DI:GraphNode' xmi:id='id690dd23f-6165-48fd-b1b5-6e3165989b5f'>
+            <anchorage xmi:type='DI:GraphConnector' xmi:id='ida73c3d3f-3bdc-44e5-8069-06f3bf40147e' graphEdge='id59f759de-13f7-40aa-b3f9-4f9750c1681d ide7abbd64-d4fc-4523-b486-5be5c4f8fd52'/>
+            <position xmi:type='DI:Point' x='233.00001525878906' y='544.1640625'/>
+            <property xmi:type='DI:Property' key='lineColor' value='#a5a5a5'/>
+            <property xmi:type='DI:Property' key='showPartition' value='false'/>
+            <property xmi:type='DI:Property' key='fontColor' value='#0'/>
+            <property xmi:type='DI:Property' key='font' value='SansSerif,plain,11'/>
+            <property xmi:type='DI:Property' key='presentation' value='SYMBOLIC'/>
+            <property xmi:type='DI:Property' key='fillColor' value='#ffefb5'/>
+            <property xmi:type='DI:Property' key='lineWidth' value='1.0'/>
+            <semanticModel xmi:type='DI:CoreSemanticModelBridge' element='uml:OpaqueAction:urn:uuid:87a23241-5d44-4164-a094-9fa3c3796362'/>
+            <size xmi:type='DI:Dimension' height='45.000030517578125' width='135.00001525878906'/>
+          </contained>
+          <contained xmi:type='DI:GraphEdge' xmi:id='id59f759de-13f7-40aa-b3f9-4f9750c1681d' anchor='ida73c3d3f-3bdc-44e5-8069-06f3bf40147e id7a4852cf-b4e8-4a87-b388-c3f9ebc37c84'>
+            <contained xmi:type='DI:GraphNode' xmi:id='idef87205a-7731-469e-beac-3203f0a0bd1f'>
+              <position xmi:type='DI:Point' x='-5.5' y='-10.738037109375'/>
+              <semanticModel xmi:type='DI:SimpleSemanticModelBridge' typeInfo='sourcename'/>
+            </contained>
+            <contained xmi:type='DI:GraphNode' xmi:id='id4c780621-9815-46c7-b80e-3cf4912ebbc1'>
+              <position xmi:type='DI:Point' x='-39.0' y='4.0'/>
+              <semanticModel xmi:type='DI:SimpleSemanticModelBridge' typeInfo='stereotype'/>
+            </contained>
+            <contained xmi:type='DI:GraphNode' xmi:id='id9fc6a255-ff08-4468-a15c-3410b0192053'>
+              <position xmi:type='DI:Point' x='-36.0' y='-25.47607421875'/>
+              <semanticModel xmi:type='DI:SimpleSemanticModelBridge' typeInfo='name'/>
+            </contained>
+            <contained xmi:type='DI:GraphNode' xmi:id='idcf6263b4-662c-47e1-82c8-c48892a30973'>
+              <position xmi:type='DI:Point' x='-65.0' y='-25.47607421875'/>
+              <semanticModel xmi:type='DI:SimpleSemanticModelBridge' typeInfo='destinationmultiplicity'/>
+            </contained>
+            <property xmi:type='DI:Property' key='showAssocName' value='false'/>
+            <property xmi:type='DI:Property' key='lineColor' value='#646464'/>
+            <property xmi:type='DI:Property' key='EdgeType' value='1'/>
+            <property xmi:type='DI:Property' key='lineWidth' value='1.0'/>
+            <property xmi:type='DI:Property' key='showGuard' value='false'/>
+            <property xmi:type='DI:Property' key='showStereotype' value='false'/>
+            <property xmi:type='DI:Property' key='fontColor' value='#0'/>
+            <property xmi:type='DI:Property' key='font' value='SansSerif,plain,11'/>
+            <property xmi:type='DI:Property' key='showWeight' value='false'/>
+            <semanticModel xmi:type='DI:CoreSemanticModelBridge' element='uml:ControlFlow:urn:uuid:2f4bc9ca-1def-4b33-8dcf-e914d1b070ae'/>
+            <waypoint xmi:type='DI:Point' x='235.5076141357422' y='582.469970703125'/>
+            <waypoint xmi:type='DI:Point' x='57.85707473754883' y='582.469970703125'/>
           </contained>
           <position xmi:type='DI:Point' x='-177.0' y='0.0'/>
           <semanticModel xmi:type='DI:SimpleSemanticModelBridge' typeInfo='BodyCompartment'/>
@@ -492,6 +535,17 @@
       <property xmi:type='DI:Property' key='OddRowColor' value='#ffffff'/>
       <semanticModel xmi:type='DI:CoreSemanticModelBridge' element='uml:Activity:urn:uuid:25fabe9f-6c6f-4376-b0b1-1bf5ea955d51' presentation='EXPANDED'/>
       <size xmi:type='DI:Dimension' height='675.0' width='960.0'/>
+    </contained>
+    <contained xmi:type='DI:GraphNode' xmi:id='id613c939b-0a99-455a-b002-5dce3c7a0bdd'>
+      <position xmi:type='DI:Point' x='15.000007629394531' y='29.999996185302734'/>
+      <property xmi:type='DI:Property' key='text' value='&lt;html>&#xa;  &lt;head>&#xa;    &#xa;  &lt;/head>&#xa;  &lt;body>&#xa;    &lt;p>&#xa;      &lt;font face=&quot;SansSerif&quot; size=&quot;3&quot; color=&quot;#000000&quot;>Teniendo en cuenta que &#xa;      deberian tener el registro de faltantes y de ordenes de produccion.&lt;/font>&#xa;    &lt;/p>&#xa;  &lt;/body>&#xa;&lt;/html>&#xa;'/>
+      <property xmi:type='DI:Property' key='lineColor' value='#a5a5a5'/>
+      <property xmi:type='DI:Property' key='fontColor' value='#0'/>
+      <property xmi:type='DI:Property' key='font' value='SansSerif,plain,11'/>
+      <property xmi:type='DI:Property' key='fillColor' value='#ffffcc'/>
+      <property xmi:type='DI:Property' key='lineWidth' value='1.0'/>
+      <semanticModel xmi:type='DI:SimpleSemanticModelBridge' typeInfo='Note'/>
+      <size xmi:type='DI:Dimension' height='60.000003814697266' width='224.99998474121094'/>
     </contained>
     <property xmi:type='DI:Property' key='DiagramLayoutStyle' value='1'/>
     <property xmi:type='DI:Property' key='EdgeCrossingType' value='0'/>
