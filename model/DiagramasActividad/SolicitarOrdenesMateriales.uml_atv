@@ -57,6 +57,12 @@
     isLeaf='false'
     name='ControlFlow8'>
    <source href='urn:uuid:760bfaad-e550-4c77-87aa-7443238efd32'/>
+   <target href='urn:uuid:87a23241-5d44-4164-a094-9fa3c3796362'/>
+  </edge>
+  <edge xmi:type='uml:ControlFlow' xmi:uuid='urn:uuid:2f4bc9ca-1def-4b33-8dcf-e914d1b070ae'
+    isLeaf='false'
+    name='ControlFlow9'>
+   <source href='urn:uuid:87a23241-5d44-4164-a094-9fa3c3796362'/>
    <target href='urn:uuid:7d5b2801-8491-46a3-b339-1001da165cd1'/>
   </edge>
   <node xmi:type='uml:InitialNode' xmi:uuid='urn:uuid:6dd3d69f-c236-4441-abab-78da26c49f8f'
@@ -116,7 +122,14 @@
   <node xmi:type='uml:FlowFinalNode' xmi:uuid='urn:uuid:7d5b2801-8491-46a3-b339-1001da165cd1'
     isLeaf='false'
     name='FlowFinalNode1'>
+   <incoming href='urn:uuid:2f4bc9ca-1def-4b33-8dcf-e914d1b070ae'/>
+  </node>
+  <node xmi:type='uml:OpaqueAction' xmi:uuid='urn:uuid:87a23241-5d44-4164-a094-9fa3c3796362'
+    isLeaf='false'
+    isLocallyReentrant='false'
+    name='AlmacenarProductos'>
    <incoming href='urn:uuid:3a50ebee-db68-450f-8d2e-ffe59552313d'/>
+   <outgoing href='urn:uuid:2f4bc9ca-1def-4b33-8dcf-e914d1b070ae'/>
   </node>
  </uml:Activity>
 </xmi:XMI>
