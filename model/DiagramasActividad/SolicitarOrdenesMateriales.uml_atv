@@ -10,5 +10,9 @@
    isReentrant='true'
    isSingleExecution='false'
    name='SolicitarOrdenesMateriales'
-   visibility='public'/>
+   visibility='public'>
+  <node xmi:type='uml:InitialNode' xmi:uuid='urn:uuid:6dd3d69f-c236-4441-abab-78da26c49f8f'
+    isLeaf='false'
+    name='InitialNode1'/>
+ </uml:Activity>
 </xmi:XMI>

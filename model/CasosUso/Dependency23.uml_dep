@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmlns:xmi='http://www.omg.org/spec/XMI/20131001' xmlns:uml='http://www.omg.org/spec/UML/20131001'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='12.2.1.3.0'/>
+ <uml:Dependency xmi:type='uml:Dependency' xmi:uuid='urn:uuid:bedddd6e-c282-4068-a4a5-db5cb9e9186f'
+   name='Dependency23'
+   visibility='public'>
+  <client href='urn:uuid:272a00eb-3cc4-4147-8388-281d880a78c7'/>
+  <supplier href='urn:uuid:0f9c1b82-5d0f-4496-a112-64068514a910'/>
+ </uml:Dependency>
+</xmi:XMI>

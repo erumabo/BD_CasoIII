@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmlns:xmi='http://www.omg.org/spec/XMI/20131001' xmlns:uml='http://www.omg.org/spec/UML/20131001'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='12.2.1.3.0'/>
+ <uml:UseCase xmi:type='uml:UseCase' xmi:uuid='urn:uuid:c7a08f3a-38fd-417d-8be9-684baf99ab29'
+   isAbstract='false'
+   isFinalSpecialization='false'
+   isLeaf='false'
+   name='AgruparOrdenesDisponibles'
+   visibility='public'/>
+</xmi:XMI>

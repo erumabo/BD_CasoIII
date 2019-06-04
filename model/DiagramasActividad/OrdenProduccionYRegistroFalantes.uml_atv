@@ -9,13 +9,55 @@
    isReadOnly='false'
    isReentrant='true'
    isSingleExecution='false'
-   name='OrdenProduccion'
+   name='OrdenProduccionYRegistroFalantes'
    visibility='public'>
   <edge xmi:type='uml:ControlFlow' xmi:uuid='urn:uuid:22066dfe-6550-4f2b-9d10-64c5def988f1'
     isLeaf='false'
     name='ControlFlow1'>
    <source href='urn:uuid:8eeb99b6-45c5-4194-9c9f-59db98294836'/>
    <target href='urn:uuid:69051d46-fadc-45ea-b625-5e76f407d314'/>
+  </edge>
+  <edge xmi:type='uml:ControlFlow' xmi:uuid='urn:uuid:d3506f52-2009-4c8e-92ec-a55176b4009b'
+    isLeaf='false'
+    name='ControlFlow2'>
+   <source href='urn:uuid:2bd1992e-a2ad-4d1a-95be-15521bc4eeff'/>
+   <target href='urn:uuid:2e52fd73-a799-4916-addb-a5d65fe96223'/>
+  </edge>
+  <edge xmi:type='uml:ControlFlow' xmi:uuid='urn:uuid:0db4c886-97f7-421e-afb7-1866b93ee58d'
+    isLeaf='false'
+    name='ControlFlow3'>
+   <source href='urn:uuid:69051d46-fadc-45ea-b625-5e76f407d314'/>
+   <target href='urn:uuid:2bd1992e-a2ad-4d1a-95be-15521bc4eeff'/>
+  </edge>
+  <edge xmi:type='uml:ControlFlow' xmi:uuid='urn:uuid:fa81a44a-b02d-42a6-831f-fee274500c9b'
+    isLeaf='false'
+    name='ControlFlow4'>
+   <source href='urn:uuid:2bd1992e-a2ad-4d1a-95be-15521bc4eeff'/>
+   <target href='urn:uuid:20cfcf4d-f4a7-4e9b-9597-c0af4557d249'/>
+  </edge>
+  <edge xmi:type='uml:ControlFlow' xmi:uuid='urn:uuid:4f428afd-c636-4d5e-8d94-8a2eabf665fb'
+    isLeaf='false'
+    name='ControlFlow5'>
+   <source href='urn:uuid:20cfcf4d-f4a7-4e9b-9597-c0af4557d249'/>
+   <target href='urn:uuid:e9c127fd-7c60-4908-b06c-4c84e86a2774'/>
+  </edge>
+  <edge xmi:type='uml:ControlFlow' xmi:uuid='urn:uuid:c2e7dfc6-314b-4c79-913b-67afb9d67ed4'
+    isLeaf='false'
+    name='ControlFlow6'>
+   <source href='urn:uuid:20cfcf4d-f4a7-4e9b-9597-c0af4557d249'/>
+   <target href='urn:uuid:7709b216-22f4-45d5-b04a-45beda15f6bf'/>
+  </edge>
+  <edge xmi:type='uml:ControlFlow' xmi:uuid='urn:uuid:284c017f-27a2-4ec2-a492-a4d915580107'
+    isLeaf='false'
+    name='ControlFlow7'>
+   <source href='urn:uuid:7709b216-22f4-45d5-b04a-45beda15f6bf'/>
+   <target href='urn:uuid:2e1e067f-718b-46a2-bbf0-509a69b1e744'/>
+  </edge>
+  <edge xmi:type='uml:ControlFlow' xmi:uuid='urn:uuid:5b6457ae-dcd6-4a98-8f99-1ff68bdd93a7'
+    isLeaf='false'
+    name='ControlFlow8'>
+   <source href='urn:uuid:e9c127fd-7c60-4908-b06c-4c84e86a2774'/>
+   <target href='urn:uuid:4453ba37-4fdd-4d1e-8819-122d1f58ad0d'/>
   </edge>
   <node xmi:type='uml:InitialNode' xmi:uuid='urn:uuid:8eeb99b6-45c5-4194-9c9f-59db98294836'
     isLeaf='false'
@@ -27,6 +69,54 @@
     isLocallyReentrant='false'
     name='RegistrarPedido'>
    <incoming href='urn:uuid:22066dfe-6550-4f2b-9d10-64c5def988f1'/>
+   <outgoing href='urn:uuid:0db4c886-97f7-421e-afb7-1866b93ee58d'/>
+  </node>
+  <node xmi:type='uml:OpaqueAction' xmi:uuid='urn:uuid:2e52fd73-a799-4916-addb-a5d65fe96223'
+    isLeaf='false'
+    isLocallyReentrant='false'
+    name='RegistrarIngresosXPedido'>
+   <incoming href='urn:uuid:d3506f52-2009-4c8e-92ec-a55176b4009b'/>
+  </node>
+  <node xmi:type='uml:OpaqueAction' xmi:uuid='urn:uuid:2bd1992e-a2ad-4d1a-95be-15521bc4eeff'
+    isLeaf='false'
+    isLocallyReentrant='false'
+    name='RegistrarLineaPedido'>
+   <incoming href='urn:uuid:0db4c886-97f7-421e-afb7-1866b93ee58d'/>
+   <outgoing href='urn:uuid:d3506f52-2009-4c8e-92ec-a55176b4009b'/>
+   <outgoing href='urn:uuid:fa81a44a-b02d-42a6-831f-fee274500c9b'/>
+  </node>
+  <node xmi:type='uml:OpaqueAction' xmi:uuid='urn:uuid:20cfcf4d-f4a7-4e9b-9597-c0af4557d249'
+    isLeaf='false'
+    isLocallyReentrant='false'
+    name='AgruparLineaPedidoXIdPedidoXPeriodo'>
+   <incoming href='urn:uuid:fa81a44a-b02d-42a6-831f-fee274500c9b'/>
+   <outgoing href='urn:uuid:4f428afd-c636-4d5e-8d94-8a2eabf665fb'/>
+   <outgoing href='urn:uuid:c2e7dfc6-314b-4c79-913b-67afb9d67ed4'/>
+  </node>
+  <node xmi:type='uml:OpaqueAction' xmi:uuid='urn:uuid:e9c127fd-7c60-4908-b06c-4c84e86a2774'
+    isLeaf='false'
+    isLocallyReentrant='false'
+    name='RegistrarOrdenesProduccion'>
+   <incoming href='urn:uuid:4f428afd-c636-4d5e-8d94-8a2eabf665fb'/>
+   <outgoing href='urn:uuid:5b6457ae-dcd6-4a98-8f99-1ff68bdd93a7'/>
+  </node>
+  <node xmi:type='uml:OpaqueAction' xmi:uuid='urn:uuid:7709b216-22f4-45d5-b04a-45beda15f6bf'
+    isLeaf='false'
+    isLocallyReentrant='false'
+    name='RegistroFaltantes'>
+   <incoming href='urn:uuid:c2e7dfc6-314b-4c79-913b-67afb9d67ed4'/>
+   <outgoing href='urn:uuid:284c017f-27a2-4ec2-a492-a4d915580107'/>
+  </node>
+  <node xmi:type='uml:FlowFinalNode' xmi:uuid='urn:uuid:2e1e067f-718b-46a2-bbf0-509a69b1e744'
+    isLeaf='false'
+    name='FlowFinalNode1'>
+   <incoming href='urn:uuid:284c017f-27a2-4ec2-a492-a4d915580107'/>
+  </node>
+  <node xmi:type='uml:OpaqueAction' xmi:uuid='urn:uuid:4453ba37-4fdd-4d1e-8819-122d1f58ad0d'
+    isLeaf='false'
+    isLocallyReentrant='false'
+    name='AlmacenarProducctos'>
+   <incoming href='urn:uuid:5b6457ae-dcd6-4a98-8f99-1ff68bdd93a7'/>
   </node>
  </uml:Activity>
 </xmi:XMI>
