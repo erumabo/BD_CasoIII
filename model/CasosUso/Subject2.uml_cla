@@ -6,7 +6,7 @@
    isActive='false'
    isFinalSpecialization='false'
    isLeaf='false'
-   name='Subject2'
+   name='Administrar pedidos'
    visibility='public'>
   <useCase href='urn:uuid:272a00eb-3cc4-4147-8388-281d880a78c7'/>
   <useCase href='urn:uuid:96d36b95-21b7-453c-a4b0-62eb71e90795'/>
